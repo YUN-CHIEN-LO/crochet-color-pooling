@@ -2,6 +2,9 @@ import { defineConfig, presetUno, presetAttributify } from "unocss";
 import presetTagify from "@unocss/preset-tagify";
 
 export default defineConfig({
+	content: {
+		filesystem: ["**/*.{html,js,ts,jsx,tsx,vue}"],
+	},
 	presets: [
 		presetUno(),
 		presetAttributify({
@@ -36,4 +39,7 @@ export default defineConfig({
 			},
 		],
 	],
+	shortcuts: {
+		page: "w-100vw h-100vh p-y-30 box-border",
+	},
 });
