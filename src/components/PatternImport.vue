@@ -1,5 +1,5 @@
 <template>
-	<div w="30%" un-border="1 red">
+	<div w="20%" un-border="1 red">
 		PatternImport
 
 		<PatternSet
